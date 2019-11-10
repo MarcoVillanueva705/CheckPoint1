@@ -23,29 +23,36 @@
 <body>
   <section class="container-fluid">
     <header class="row">
-      <div class="col-3">
-        <nav class="navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
-              class="d-inline-block align-top" alt="">
-            Bootstrap
-          </a>
-        </nav>
-      </div>
-      <div class="col-9">
+      <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Features</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
-              <a class="nav-item nav-link disabled" href="#">Disabled</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -54,46 +61,94 @@
 
   <section class="container-fluid">
     <div class="row">
-      <div class="col-6">
+      <div class="order-2 col-lg-6 order-lg-1">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta culpa deleniti provident sunt quisquam
           corrupti laborum reiciendis molestiae porro deserunt.</p>
-        <button class="btn">Click Me!</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Click Me!</button>
       </div>
-      <div class="col-6">
-        <img src="//placehold.it/200x200" alt="first-image" class="img-fluid">
+      <div class="order-1 col-lg-6 order-lg-2">
+        <iframe width="688" height="387" src="https://www.youtube.com/embed/yrooR3CjESY" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
   <section class="container-fluid">
-    <div class="row">
-      <div class="col-4"></div>
-      <div class="col-4"></div>
-      <div class="col-4"></div>
+    <div class="row text-center position-relative">
+      <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top rounded-circle"
+            src="https://www.holidaystoeurope.com.au/home/images/stories/DestinationArticles/ViennaChristmas/Vienna-Christmas-market-800.jpg"
+            alt="Card image cap">
+          <div class="card-body position-absolute">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button>Click</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top rounded-circle"
+            src="https://paulinaontheroad.com/wp-content/uploads/2019/09/Brugge.-Market-Square-at-night.jpg">
+          <div class=" card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button>Click</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top rounded-circle"
+            src="https://www.megatour.cz/uploads/images/Christmas-in-Prague-Czech-Republic.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button>Click</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- LINE BREAK -->
   <!-- CONTAINER -->
   <section class="container">
-    <div class="row">
-      <div class="col-6"></div>
-      <div class="col-6"></div>
+    <div class="row text-center">
+      <div class="col-lg-6">
+        <img
+          src="https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1471468463/nuremberg-germany-christmas-markets-GERMANYXMAS0816.jpg?itok=FKVjDYBV"
+          class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis nostrum libero, similique saepe
+          ullam veritatis quo! Consequatur, nostrum laudantium.
+      </div>
     </div>
   </section>
   </div>
 
   <!-- LOGO IMG W/SUB-HEADING -->
   <section class="container-fluid">
-    <div class="row">
-      <div class="col-6 m-auto"></div>
+    <div class="row text-center">
+      <div class="col-6 m-auto">
+        <img src="https://images.assetsdelivery.com/compings_v2/hanker81/hanker811601/hanker81160100031.jpg"
+          class="img-fluid">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, consequatur.</p>
+      </div>
     </div>
   </section>
 
   <section class="container-fluid">
     <footer class="row">
-      <div class="col-6"></div>
-      <div class="col-6"></div>
+      <div class="col-lg-6">
+        <p class="text-sm-center text-md-left">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-sm-center text-md-right">Lorem ipsum dolor sit amet.</p>
+      </div>
     </footer>
   </section>
 </body>

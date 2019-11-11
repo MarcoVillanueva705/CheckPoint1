@@ -1,3 +1,26 @@
 body {
   background-image: url('https://previews.123rf.com/images/salajean/salajean1712/salajean171200090/91049640-snow-covered-trees-and-heavy-snowing-in-the-mountains-christmas-concept.jpg');
 }
+
+.card {
+  background: transparent;
+}
+
+img {
+  height:250px;
+    width:300px;
+    overflow:hidden;
+}
+
+.text-drop {
+  position: absolute;
+  bottom: -2em;
+  padding: 0.25em;
+}
+
+.btn-drop {
+  position: absolute;
+  bottom: -2em;
+   right: 35%; 
+  padding: 0.25em;
+}
